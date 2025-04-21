@@ -38,7 +38,7 @@
   ],
   "web_accessible_resources": [
     {
-      "resources": ["deanza_professors_data.csv", "images/*"],
+      "resources": ["deanza_professors_data.csv", "images/*", "privacy.html"],
       "matches": ["<all_urls>"]
     }
   ]
