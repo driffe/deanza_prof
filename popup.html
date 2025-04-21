@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Professor Info Viewer</title>
+  <link rel="stylesheet" href="popup.css">
+  <style>
+    body {
+      width: 400px;
+      min-height: 500px;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Professor Info</h1>
+    </div>
+    
+    <div class="notes-section">
+      <h2>Notes</h2>
+      <textarea id="notesArea" placeholder="Write your notes here..."></textarea>
+    </div>
+
+    <div class="toggle-section">
+      <label class="switch">
+        <input type="checkbox" id="extensionToggle" checked>
+        <span class="slider round"></span>
+      </label>
+      <span class="toggle-label">Extension Active</span>
+    </div>
+    
+    <div class="data-section">
+      <h2>Professor Data</h2>
+      <div id="dataStatus">Loading professor data...</div>
+      <button id="reloadDataBtn" class="reload-button">Reload Data</button>
+    </div>
+    
+    <div class="footer">
+      <p>Highlight any professor name to see their information</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
